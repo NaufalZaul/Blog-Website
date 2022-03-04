@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+:root {
+    --bc-body: rgb(220, 220, 220);
+    --white: rgb(255, 255, 255);
+    --darkslategray: rgb(47, 79, 79);
+    --cinzel: 'cinzel', serif;
+    --pt_sans: 'PT Sans', sans-serif;
+    --noto_serif: 'Noto Serif JP', serif;
+    --abel: 'Abel', sans-serif;
+}
+
+body {
+    background-color: var(--bc-body);
+}
+
+.logo {
+    font-family: var(--cinzel);
+}
+
+.navbar,
+.footer {
+    background-color: var(--darkslategray);
+    color: var(--white);
+}
+
+.nav_nav {
+    font-family: var(--pt_sans);
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--darkslategray);
+    color: var(--white);
+    padding: 1em 0 5em;
+}
+
+.header_logo {
+    font-size: 50px;
+}
+
+.header_left {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+.header_left p {
+    margin: 1em 3em 3em;
+    text-align: center;
+    font-family: var(--pt_sans);
+}
+
+.header_right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 13px auto;
+}
+
+.img_left {
+    display: grid;
+    align-content: center;
+}
+
+.img_right {
+    display: grid;
+    align-content: center;
+}
+
+.img_header {
+    width: 250px;
+    margin: 2px;
+}
+
+.button a {
+    list-style: none;
+    color: var(--darkslategray);
+    margin: auto 5px;
+}
+
+.about {
+    padding: 4em 1em;
+    background-color: var(--white);
+}
+
+.about p {
+    margin: 4em;
+    text-align: justify;
+    font-family: var(--noto_serif);
+}
+
+.content {
+    margin: 5em;
+}
+
+.content_1,
+.content_2,
+.content_3 {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0 1em 1em;
+    background-color: var(--white);
+    margin: 2em auto;
+    box-shadow: 7px 5px 0 rgb(0, 0, 0);
+}
+
+.card_content_1,
+.card_content_2,
+.card_content_3 {
+    border: none;
+    text-align: center;
+    font-family: var(--pt_sans);
+    width: 40rem;
+}
+
+.content_text {
+    text-indent: 30px;
+    padding: 3em;
+    text-align: justify;
+    font-family: var(--noto_serif);
+    z-index: 99999;
+}
+
+.watermark {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    padding-top: 3em;
+}
+
+.watermark img {
+    width: 25rem;
+    opacity: .1;
+}
+
+.footer {
+    text-align: center;
+    padding: 5em 0;
+    font-family: var(--abel);
+}
+
+.footer h2 {
+    font-size: 50px;
+    text-transform: capitalize;
+    margin-bottom: 1em;
+}
+
+.footer_ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.footer_ul li {
+    display: flex;
+    margin: 1em 1em 1.5em;
+    font-size: 20px;
+}
+
+.footer_ul p {
+    padding-left: .5em;
+}
+
+.footer_bottom {
+    font-size: 25px;
+    text-transform: capitalize;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 400px) {
+    .header {
+        padding: 8em 0 11em;
+    }
+
+    .header_right,
+    .card_content_1,
+    .card_content_2,
+    .card_content_3 {
+        display: none;
+    }
+
+    .header_left {
+        width: 100%;
+    }
+
+    .row {
+        flex-direction: row;
+        padding: 0 1em;
+        margin: 5em auto;
+    }
+
+    .about p {
+        margin: 1em auto;
+    }
+
+    .content {
+        margin: 1em;
+    }
+
+    .content_text {
+        padding: 2em 1em;
+    }
+
+    .watermark {
+        padding: 20em 1.2em;
+    }
+
+    .watermark img {
+        width: 22rem;
+    }
+
+    .footer {
+        padding: 5em 8px;
+    }
+
+    .footer_ul {
+        flex-wrap: wrap;
+    }
+
+    .footer_ul li,
+    .footer_bottom {
+        font-size: 25px;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width:835px) {
+    .img_header {
+        width: 10rem;
+    }
+
+    .about {
+        padding: 5em 2em;
+    }
+
+    .about p {
+        margin: 0;
+    }
+
+    .row {
+        align-items: center;
+        margin: 3em auto;
+    }
+
+    .card_content_1,
+    .card_content_2,
+    .card_content_3 {
+        width: 45rem;
+    }
+
+    .name_card {
+        display: none;
+    }
+
+    .watermark {
+        padding-top: 10em;
+    }
+
+    .footer_bottom {
+        font-size: 30px;
+    }
+}
